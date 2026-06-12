@@ -55,6 +55,6 @@ elseif choise == "3" then
     local refill_slot = read()
 
     local file = fs.open("startup.lua", "a")
-    file.writeLine("shell.run('server ".. client .. " " .. key .. " " .. modem_side .. " " .. armor_side .. " " refill_side .. " " .. refill_slot .."')")
+    file.writeLine("shell.run('server ".. client .. " " .. key .. " " .. modem_side .. " " .. armor_side .. " " .. refill_side .. " " .. refill_slot .."')")
     file.close()
 end
