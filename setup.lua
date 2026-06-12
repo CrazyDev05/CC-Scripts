@@ -42,13 +42,13 @@ elseif choise == "3" then
     print("Encryption key? (32 cahr alphanumeric)")
     local key = read()
 
-    print("Modem side?")
+    print("Modem side? probably 'top'")
     local modem_side = read()
     
-    print("Armor side? (from the Inventory Manager)")
+    print("Armor side? (from the Inventory Manager) probably 'top'")
     local armor_side = read()
     
-    print("Time Fluid Tank side? (from the Inventory Manager)")
+    print("Time Fluid Tank side? (from the Inventory Manager) probably 'right'")
     local refill_side = read()
     
     print("Slot to put empty Time Wand")
