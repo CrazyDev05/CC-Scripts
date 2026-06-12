@@ -52,6 +52,7 @@ local config = fs.open("/config.json", "r")
 if config then
     local contents = textutils.unserialiseJSON(config.readAll())
     refill_level = contents["refill_level"]
+    config.close()
 end
 
 local function removeArmor(targetSlot)
@@ -110,6 +111,7 @@ local function message()
                         ["refill_level"] = refill_level
                     })
                     config.write(contents)
+                    config.close()
                 end
 
                 connections[id]:send(refill_level)
