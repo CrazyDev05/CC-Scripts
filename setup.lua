@@ -3,14 +3,16 @@ print("1) Generate Address")
 print("2) Install Client")
 print("3) Install Server")
 
+shell.setDir("/")
+
 local choice = read()
 if choice == "1" then
     shell.run("wget run https://github.com/migeyel/ecnet/releases/download/v2.1.0/install.lua")
     shell.run("wget run https://github.com/migeyel/ccryptolib/releases/download/v1.2.2/install.lua")
     shell.run("clear")
 
-    local ecnet2 = require("/ecnet2")
-    local random = require("/ccryptolib.random")
+    local ecnet2 = require("ecnet2")
+    local random = require("ccryptolib.random")
     
     random.initWithTiming()
     local address = ecnet2.Identity("/.ecnet2").address
