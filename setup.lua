@@ -9,8 +9,8 @@ if choice == "1" then
     shell.run("wget run https://github.com/migeyel/ccryptolib/releases/download/v1.2.2/install.lua")
     shell.run("clear")
 
-    local ecnet2 = require("ecnet2")
-    local random = require("ccryptolib.random")
+    local ecnet2 = require("/ecnet2")
+    local random = require("/ccryptolib.random")
     
     random.initWithTiming()
     local address = ecnet2.Identity("/.ecnet2").address
