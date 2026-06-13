@@ -4,7 +4,7 @@ print("2) Install Client")
 print("3) Install Server")
 
 local choice = read()
-if choice == "3" then
+if choice == "1" then
     shell.run("wget run https://github.com/migeyel/ecnet/releases/download/v2.1.0/install.lua")
     shell.run("wget run https://github.com/migeyel/ccryptolib/releases/download/v1.2.2/install.lua")
     shell.run("clear")
